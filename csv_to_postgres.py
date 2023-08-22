@@ -11,7 +11,6 @@ def extract_data_from_url(url):
   response = requests.get(url)
   response.raise_for_status()
 
-  # return df
   return response.text
 
 # def update_postgres_table(df):
@@ -33,11 +32,12 @@ def extract_data_from_url(url):
 
 #   connection.commit()
 #   cursor.close()
-#   connection.close()
+# connection.close()
 
 if __name__ == "__main__":
-  csv_url = "https://raw.githubusercontent.com/datasets/house-prices-uk/main/data/data.csv"
+  csv_url = "https://raw.githubusercontent.com/datasets/london-crime/master/data/crime-rates.csv"
   csv_data = extract_data_from_url(csv_url)
+  print(csv_data)
 
   # update_postgres_table(csv_data)
 

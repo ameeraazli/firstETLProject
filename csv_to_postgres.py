@@ -11,33 +11,35 @@ def extract_data_from_url(url):
   response = requests.get(url)
   response.raise_for_status()
 
-  return response.text
+  df = pd.read_csv(url)
 
-# def update_postgres_table(df):
-#   connection = psycopg2.connect(
-#     host=DB_HOST,
-#     database=DB_NAME,
-#     user=DB_USER,
-#     password=DB_PASSWORD
-#   )
+  return df
 
-#   cursor = connection.cursor()
+def update_postgres_table(df):
+  connection = psycopg2.connect(
+    host=DB_HOST,
+    database=DB_NAME,
+    user=DB_USER,
+    password=DB_PASSWORD
+  )
 
-#   for index, row in df.iterrows():
-#     query = """
-#             INSERT INTO OnlineRetail (InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerId, Country)
-#             VALUES('{row['InvoiceNo']}', '{row['StockCode']}', '{row['Description']}', '{row['Quantity']}', '{row['InvoiceDate']}', '{row['UnitPrice']}',
-#             '{row['CustomerId']}', '{row['Country']}')
-#             """
+  cursor = connection.cursor()
 
-#   connection.commit()
-#   cursor.close()
-# connection.close()
+  for index, row in df.iterrows():
+    query = f"INSERT INTO crime_rate (code, borough, crimeyear, value) VALUES ('{row['Code']}', '{row['Borough']}', '{row['Year']}', '{row['Value']}')"
+    cursor.execute(query)
+
+  connection.commit()
+  cursor.close()
+  connection.close()
+
+  print("success")
 
 if __name__ == "__main__":
   csv_url = "https://raw.githubusercontent.com/datasets/london-crime/master/data/crime-rates.csv"
   csv_data = extract_data_from_url(csv_url)
   print(csv_data)
 
-  # update_postgres_table(csv_data)
+  update_postgres_table(csv_data)
+
 

@@ -16,13 +16,6 @@ def extract_data_from_url(url):
   return df
 
 def update_postgres_table(df, connection):
-  # connection = psycopg2.connect(
-  #   host=DB_HOST,
-  #   database=DB_NAME,
-  #   user=DB_USER,
-  #   password=DB_PASSWORD
-  # )
-
   cursor = connection.cursor()
 
   for index, row in df.iterrows():
@@ -31,11 +24,28 @@ def update_postgres_table(df, connection):
 
   connection.commit()
   cursor.close()
-  # connection.close()
 
-  print("success")
+  print("successful insertion into database")
 
-# def run_aggregate_queries(df):
+def run_aggregate_queries(df, connection):
+  cursor = connection.cursor()
+  cursor.execute("SELECT MIN(value) FROM crime_rate WHERE value IS NOT NULL AND value <> 'NaN'")
+  min_crime_rate = cursor.fetchone()
+  print("The minimum crime rate in all of UK's borough:" + str(min_crime_rate[0]))
+
+  cursor.execute("SELECT MAX(value) FROM crime_rate WHERE value IS NOT NULL AND value <> 'NaN'")
+  max_crime_rate = cursor.fetchone()
+  print("The maximum crime rate in all of UK's borough:" + str(max_crime_rate[0]))
+
+  cursor.execute("SELECT AVG(value) FROM crime_rate WHERE value IS NOT NULL AND value <> 'NaN'")
+  avg_crime_rate = cursor.fetchone()
+  print("The average crime rate in all of UK's borough:" + str(avg_crime_rate[0]))
+
+  cursor.execute("SELECT PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY value) FROM crime_rate WHERE value IS NOT NULL AND value <> 'NaN'")
+  median_crime_rate = cursor.fetchone()
+  print("The median crime rate in UK's borough:" + str(median_crime_rate[0]))
+
+  cursor.close()
 
 if __name__ == "__main__":
   csv_url = "https://raw.githubusercontent.com/datasets/london-crime/master/data/crime-rates.csv"
@@ -50,6 +60,10 @@ if __name__ == "__main__":
   )
 
   update_postgres_table(csv_data, connection)
+
+  run_aggregate_queries(csv_data, connection)
+
+  # df = pd.DataFrame({'value'})
 
   connection.close()
 

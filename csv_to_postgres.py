@@ -56,14 +56,13 @@ if __name__ == "__main__":
     host=DB_HOST,
     database=DB_NAME,
     user=DB_USER,
-    password=DB_PASSWORD
+    password=DB_PASSWORD,
+    port= 5433
   )
 
   update_postgres_table(csv_data, connection)
 
   run_aggregate_queries(csv_data, connection)
-
-  # df = pd.DataFrame({'value'})
 
   connection.close()
 

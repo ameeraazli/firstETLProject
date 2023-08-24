@@ -8,8 +8,8 @@ WORKDIR /app
 COPY . /app
 
 # Install any dependencies
-RUN pip install poetry
+RUN pip3 install poetry
 RUN poetry install
 
 # Define the command to run when the container starts
-CMD ["python", "app.py"]
+CMD ["poetry", "run", "python", "csv_to_postgres.py"]

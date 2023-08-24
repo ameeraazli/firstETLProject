@@ -4,5 +4,3 @@ create table crime_rate(
 	 CrimeYear DATE,
 	 Value REAL
 );
-
-select * from crime_rate

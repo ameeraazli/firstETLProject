@@ -57,7 +57,7 @@ if __name__ == "__main__":
     database=DB_NAME,
     user=DB_USER,
     password=DB_PASSWORD,
-    port= 5433
+    port= 5432
   )
 
   update_postgres_table(csv_data, connection)

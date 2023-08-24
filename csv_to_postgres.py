@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 import psycopg2
 
-DB_HOST = "localhost"
+DB_HOST = "host.docker.internal"
 DB_NAME = "postgres"
 DB_USER = "postgres"
 DB_PASSWORD = "helloworld123"
@@ -57,7 +57,7 @@ if __name__ == "__main__":
     database=DB_NAME,
     user=DB_USER,
     password=DB_PASSWORD,
-    port= 5432
+    port=5432
   )
 
   update_postgres_table(csv_data, connection)

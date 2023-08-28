@@ -32,19 +32,19 @@ def update_postgres_table(df):
 def run_aggregate_queries(df):
   connection = create_connection()
   cursor = connection.cursor()
-  cursor.execute("SELECT MIN(value) FROM crime_date WHERE value IS NOT NULL AND value <> 'NaN'")
+  cursor.execute("SELECT MIN(value) FROM crime_date WHERE value <> 'NaN'")
   min_crime_date = cursor.fetchone()
   print("The minimum crime rate in all of UK's borough:" + str(min_crime_date[0]))
 
-  cursor.execute("SELECT MAX(value) FROM crime_date WHERE value IS NOT NULL AND value <> 'NaN'")
+  cursor.execute("SELECT MAX(value) FROM crime_date WHERE value <> 'NaN'")
   max_crime_date = cursor.fetchone()
   print("The maximum crime rate in all of UK's borough:" + str(max_crime_date[0]))
 
-  cursor.execute("SELECT AVG(value) FROM crime_date WHERE value IS NOT NULL AND value <> 'NaN'")
+  cursor.execute("SELECT AVG(value) FROM crime_date WHERE value <> 'NaN'")
   avg_crime_date = cursor.fetchone()
   print("The average crime rate in all of UK's borough:" + str(avg_crime_date[0]))
 
-  cursor.execute("SELECT PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY value) FROM crime_date WHERE value IS NOT NULL AND value <> 'NaN'")
+  cursor.execute("SELECT PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY value) FROM crime_date WHERE value <> 'NaN'")
   median_crime_date = cursor.fetchone()
   print("The median crime rate in UK's borough:" + str(median_crime_date[0]))
 

@@ -13,6 +13,6 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: helloworld123
     ports:
-      - "5433:5432"
+      - "5432:5432"
     volumes:
       - "./init.sql:/docker-entrypoint-initdb.d/init.sql"

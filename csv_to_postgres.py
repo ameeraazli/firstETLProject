@@ -59,7 +59,7 @@ def create_connection():
     database=DB_NAME,
     user=DB_USER,
     password=DB_PASSWORD,
-    port=5433,
+    port=5432
   )
 
   return connection

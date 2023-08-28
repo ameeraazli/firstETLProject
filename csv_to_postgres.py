@@ -3,7 +3,6 @@ import pandas as pd
 import psycopg2
 
 DB_HOST = "host.docker.internal"
-# DB_HOST = "localhost"
 DB_NAME = "postgres"
 DB_USER = "postgres"
 DB_PASSWORD = "helloworld123"
@@ -66,19 +65,12 @@ def create_connection():
   return connection
 
 
-
 if __name__ == "__main__":
   csv_url = "https://raw.githubusercontent.com/datasets/london-crime/master/data/crime-rates.csv"
   csv_data = extract_data_from_url(csv_url)
   print(csv_data)
 
-  # import time
-  # time.sleep(5000)
-
   update_postgres_table(csv_data)
 
   run_aggregate_queries(csv_data)
-
-  # import time
-  # time.sleep(5000)
 

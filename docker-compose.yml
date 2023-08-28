@@ -16,8 +16,3 @@ services:
       - "5433:5432"
     volumes:
       - "./init.sql:/docker-entrypoint-initdb.d/init.sql"
-      # - "test_volume:/var/lib/postgresql/data"
-
-# volumes:
-#   test_volume:
-#     external: true

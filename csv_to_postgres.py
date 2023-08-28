@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 import psycopg2
 
-DB_HOST = "host.docker.internal"
+DB_HOST = "db"
 DB_NAME = "postgres"
 DB_USER = "postgres"
 DB_PASSWORD = "helloworld123"

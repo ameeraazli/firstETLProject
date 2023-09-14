@@ -5962,3 +5962,23 @@ NameError: name 'df' is not defined
 [2023-09-14T08:09:41.670+0000] {logging_mixin.py:151} INFO - [2023-09-14T08:09:41.670+0000] {dag.py:2915} INFO - Sync 1 DAGs
 [2023-09-14T08:09:41.679+0000] {logging_mixin.py:151} INFO - [2023-09-14T08:09:41.679+0000] {dag.py:3696} INFO - Setting next_dagrun for etl_dag to 2023-09-13T00:00:00+00:00, run_after=2023-09-14T00:00:00+00:00
 [2023-09-14T08:09:41.686+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.181 seconds
+[2023-09-14T09:11:04.875+0000] {processor.py:157} INFO - Started process (PID=30) to work on /opt/airflow/dags/etl_dag.py
+[2023-09-14T09:11:04.876+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2023-09-14T09:11:04.879+0000] {logging_mixin.py:151} INFO - [2023-09-14T09:11:04.879+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2023-09-14T09:11:05.465+0000] {processor.py:839} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/etl_dag.py
+[2023-09-14T09:11:05.576+0000] {logging_mixin.py:151} INFO - [2023-09-14T09:11:05.576+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-09-14T09:11:05.580+0000] {logging_mixin.py:151} INFO - [2023-09-14T09:11:05.580+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-09-14T09:11:05.583+0000] {logging_mixin.py:151} INFO - [2023-09-14T09:11:05.583+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-09-14T09:11:05.583+0000] {logging_mixin.py:151} INFO - [2023-09-14T09:11:05.583+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:etl_dag' as access control is unset.
+[2023-09-14T09:11:05.583+0000] {logging_mixin.py:151} INFO - [2023-09-14T09:11:05.583+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-14T09:11:05.588+0000] {logging_mixin.py:151} INFO - [2023-09-14T09:11:05.588+0000] {dag.py:2937} INFO - Creating ORM DAG for etl_dag
+[2023-09-14T09:11:05.593+0000] {logging_mixin.py:151} INFO - [2023-09-14T09:11:05.593+0000] {dag.py:3696} INFO - Setting next_dagrun for etl_dag to 2023-09-13T00:00:00+00:00, run_after=2023-09-14T00:00:00+00:00
+[2023-09-14T09:11:05.602+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.729 seconds
+[2023-09-14T09:11:35.864+0000] {processor.py:157} INFO - Started process (PID=39) to work on /opt/airflow/dags/etl_dag.py
+[2023-09-14T09:11:35.871+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2023-09-14T09:11:35.873+0000] {logging_mixin.py:151} INFO - [2023-09-14T09:11:35.873+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2023-09-14T09:11:36.133+0000] {processor.py:839} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/etl_dag.py
+[2023-09-14T09:11:36.197+0000] {logging_mixin.py:151} INFO - [2023-09-14T09:11:36.197+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:etl_dag' as access control is unset.
+[2023-09-14T09:11:36.198+0000] {logging_mixin.py:151} INFO - [2023-09-14T09:11:36.198+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-14T09:11:36.208+0000] {logging_mixin.py:151} INFO - [2023-09-14T09:11:36.208+0000] {dag.py:3696} INFO - Setting next_dagrun for etl_dag to 2023-09-13T00:00:00+00:00, run_after=2023-09-14T00:00:00+00:00
+[2023-09-14T09:11:36.224+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.365 seconds

@@ -3609,3 +3609,25 @@ File Path                     PID    Runtime      # DAGs    # Errors  Last Runti
 /opt/airflow/dags/etl_dag.py                           1           0  0.23s           2023-09-14T08:09:11
 ================================================================================
 [2023-09-14T08:09:47.388+0000] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2023-09-14T09:11:04.695+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2023-09-14T09:11:04.695+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-09-14T09:11:04.695+0000] {manager.py:489} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2023-09-14T09:11:04.696+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2023-09-14T09:11:04.702+0000] {manager.py:762} INFO - There are 1 files in /opt/airflow/dags
+[2023-09-14T09:11:04.902+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/etl_dag.py     30  0.03s             0           0
+================================================================================
+[2023-09-14T09:11:35.071+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_dag.py                           1           0  0.74s           2023-09-14T09:11:05
+================================================================================
+[2023-09-14T09:11:36.583+0000] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15

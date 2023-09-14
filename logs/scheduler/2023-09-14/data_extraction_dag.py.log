@@ -1,0 +1,228 @@
+[2023-09-14T03:07:23.325+0000] {processor.py:157} INFO - Started process (PID=30) to work on /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:07:23.325+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_extraction_dag.py for tasks to queue
+[2023-09-14T03:07:23.327+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:07:23.326+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:07:23.892+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:07:23.890+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data_extraction_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_extraction_dag.py", line 83, in <module>
+    python_callable=_extract_data_from_url(url)
+NameError: name 'url' is not defined
+[2023-09-14T03:07:23.893+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:07:23.902+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_extraction_dag.py took 0.579 seconds
+[2023-09-14T03:07:54.150+0000] {processor.py:157} INFO - Started process (PID=39) to work on /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:07:54.151+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_extraction_dag.py for tasks to queue
+[2023-09-14T03:07:54.153+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:07:54.153+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:07:54.300+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:07:54.298+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data_extraction_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_extraction_dag.py", line 83, in <module>
+    python_callable=_extract_data_from_url(url)
+NameError: name 'url' is not defined
+[2023-09-14T03:07:54.300+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:07:54.311+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_extraction_dag.py took 0.165 seconds
+[2023-09-14T03:08:24.425+0000] {processor.py:157} INFO - Started process (PID=48) to work on /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:08:24.426+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_extraction_dag.py for tasks to queue
+[2023-09-14T03:08:24.429+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:08:24.428+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:08:24.575+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:08:24.573+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data_extraction_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_extraction_dag.py", line 83, in <module>
+    python_callable=_extract_data_from_url(url)
+NameError: name 'url' is not defined
+[2023-09-14T03:08:24.575+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:08:24.585+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_extraction_dag.py took 0.163 seconds
+[2023-09-14T03:08:54.818+0000] {processor.py:157} INFO - Started process (PID=57) to work on /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:08:54.819+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_extraction_dag.py for tasks to queue
+[2023-09-14T03:08:54.822+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:08:54.821+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:08:54.969+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:08:54.967+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data_extraction_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_extraction_dag.py", line 83, in <module>
+    python_callable=_extract_data_from_url(url)
+NameError: name 'url' is not defined
+[2023-09-14T03:08:54.970+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:08:54.980+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_extraction_dag.py took 0.165 seconds
+[2023-09-14T03:09:25.083+0000] {processor.py:157} INFO - Started process (PID=66) to work on /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:09:25.084+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_extraction_dag.py for tasks to queue
+[2023-09-14T03:09:25.085+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:09:25.085+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:09:25.232+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:09:25.230+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data_extraction_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_extraction_dag.py", line 83, in <module>
+    python_callable=_extract_data_from_url(url)
+NameError: name 'url' is not defined
+[2023-09-14T03:09:25.232+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:09:25.242+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_extraction_dag.py took 0.162 seconds
+[2023-09-14T03:09:55.479+0000] {processor.py:157} INFO - Started process (PID=74) to work on /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:09:55.480+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_extraction_dag.py for tasks to queue
+[2023-09-14T03:09:55.483+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:09:55.482+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:09:55.631+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:09:55.629+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data_extraction_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_extraction_dag.py", line 83, in <module>
+    python_callable=_extract_data_from_url(url)
+NameError: name 'url' is not defined
+[2023-09-14T03:09:55.631+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:09:55.640+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_extraction_dag.py took 0.165 seconds
+[2023-09-14T03:10:25.800+0000] {processor.py:157} INFO - Started process (PID=83) to work on /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:10:25.801+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_extraction_dag.py for tasks to queue
+[2023-09-14T03:10:25.804+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:10:25.803+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:10:25.961+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:10:25.958+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data_extraction_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_extraction_dag.py", line 83, in <module>
+    python_callable=_extract_data_from_url(url)
+NameError: name 'url' is not defined
+[2023-09-14T03:10:25.962+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:10:25.973+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_extraction_dag.py took 0.177 seconds
+[2023-09-14T03:10:56.134+0000] {processor.py:157} INFO - Started process (PID=92) to work on /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:10:56.135+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_extraction_dag.py for tasks to queue
+[2023-09-14T03:10:56.137+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:10:56.137+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:10:56.285+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:10:56.283+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data_extraction_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_extraction_dag.py", line 83, in <module>
+    python_callable=_extract_data_from_url(url)
+NameError: name 'url' is not defined
+[2023-09-14T03:10:56.286+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:10:56.297+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_extraction_dag.py took 0.167 seconds
+[2023-09-14T03:11:17.469+0000] {processor.py:157} INFO - Started process (PID=94) to work on /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:11:17.470+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_extraction_dag.py for tasks to queue
+[2023-09-14T03:11:17.472+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:11:17.472+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:11:17.638+0000] {processor.py:839} INFO - DAG(s) dict_keys(['data_extraction_dag']) retrieved from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:11:17.721+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:11:17.721+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-09-14T03:11:17.725+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:11:17.725+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-09-14T03:11:17.727+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:11:17.727+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-09-14T03:11:17.727+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:11:17.727+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:data_extraction_dag' as access control is unset.
+[2023-09-14T03:11:17.728+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:11:17.727+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-14T03:11:17.732+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:11:17.732+0000] {dag.py:2937} INFO - Creating ORM DAG for data_extraction_dag
+[2023-09-14T03:11:17.736+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:11:17.736+0000] {dag.py:3696} INFO - Setting next_dagrun for data_extraction_dag to 2023-09-13T00:00:00+00:00, run_after=2023-09-14T00:00:00+00:00
+[2023-09-14T03:11:17.743+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_extraction_dag.py took 0.278 seconds
+[2023-09-14T03:11:58.075+0000] {processor.py:157} INFO - Started process (PID=31) to work on /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:11:58.090+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_extraction_dag.py for tasks to queue
+[2023-09-14T03:11:58.092+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:11:58.091+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:11:58.778+0000] {processor.py:839} INFO - DAG(s) dict_keys(['data_extraction_dag']) retrieved from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:11:58.879+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:11:58.879+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-09-14T03:11:58.885+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:11:58.885+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-09-14T03:11:58.887+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:11:58.887+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-09-14T03:11:58.887+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:11:58.887+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:data_extraction_dag' as access control is unset.
+[2023-09-14T03:11:58.888+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:11:58.888+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-14T03:11:58.892+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:11:58.892+0000] {dag.py:2937} INFO - Creating ORM DAG for data_extraction_dag
+[2023-09-14T03:11:58.896+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:11:58.896+0000] {dag.py:3696} INFO - Setting next_dagrun for data_extraction_dag to 2023-09-13T00:00:00+00:00, run_after=2023-09-14T00:00:00+00:00
+[2023-09-14T03:11:58.903+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_extraction_dag.py took 0.830 seconds
+[2023-09-14T03:12:29.159+0000] {processor.py:157} INFO - Started process (PID=40) to work on /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:12:29.160+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_extraction_dag.py for tasks to queue
+[2023-09-14T03:12:29.161+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:12:29.161+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:12:29.323+0000] {processor.py:839} INFO - DAG(s) dict_keys(['data_extraction_dag']) retrieved from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:12:29.370+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:12:29.370+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:data_extraction_dag' as access control is unset.
+[2023-09-14T03:12:29.370+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:12:29.370+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-14T03:12:29.380+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:12:29.380+0000] {dag.py:3696} INFO - Setting next_dagrun for data_extraction_dag to 2023-09-13T00:00:00+00:00, run_after=2023-09-14T00:00:00+00:00
+[2023-09-14T03:12:29.389+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_extraction_dag.py took 0.234 seconds
+[2023-09-14T03:13:19.052+0000] {processor.py:157} INFO - Started process (PID=30) to work on /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:13:19.053+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_extraction_dag.py for tasks to queue
+[2023-09-14T03:13:19.077+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:13:19.077+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:13:19.781+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:13:19.779+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data_extraction_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_extraction_dag.py", line 98, in <module>
+    python_callable=_update_postgres_table(df)
+NameError: name '_update_postgres_table' is not defined
+[2023-09-14T03:13:19.781+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:13:19.792+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_extraction_dag.py took 0.742 seconds
+[2023-09-14T03:13:50.027+0000] {processor.py:157} INFO - Started process (PID=40) to work on /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:13:50.028+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_extraction_dag.py for tasks to queue
+[2023-09-14T03:13:50.031+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:13:50.031+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:13:50.183+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:13:50.182+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data_extraction_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_extraction_dag.py", line 98, in <module>
+    python_callable=_update_postgres_table(df)
+NameError: name '_update_postgres_table' is not defined
+[2023-09-14T03:13:50.184+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:13:50.194+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_extraction_dag.py took 0.171 seconds
+[2023-09-14T03:14:31.681+0000] {processor.py:157} INFO - Started process (PID=29) to work on /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:14:31.682+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_extraction_dag.py for tasks to queue
+[2023-09-14T03:14:31.690+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:14:31.690+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:14:32.261+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:14:32.259+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data_extraction_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_extraction_dag.py", line 98, in <module>
+    python_callable=_update_postgres_table(df)
+NameError: name 'df' is not defined
+[2023-09-14T03:14:32.261+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:14:32.272+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_extraction_dag.py took 0.593 seconds
+[2023-09-14T03:15:02.590+0000] {processor.py:157} INFO - Started process (PID=39) to work on /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:15:02.591+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_extraction_dag.py for tasks to queue
+[2023-09-14T03:15:02.594+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:15:02.593+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:15:02.744+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:15:02.743+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data_extraction_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_extraction_dag.py", line 98, in <module>
+    python_callable=_update_postgres_table(df)
+NameError: name 'df' is not defined
+[2023-09-14T03:15:02.745+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:15:02.755+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_extraction_dag.py took 0.170 seconds
+[2023-09-14T03:15:32.877+0000] {processor.py:157} INFO - Started process (PID=48) to work on /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:15:32.878+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_extraction_dag.py for tasks to queue
+[2023-09-14T03:15:32.881+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:15:32.880+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:15:33.033+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:15:33.031+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data_extraction_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_extraction_dag.py", line 98, in <module>
+    python_callable=_update_postgres_table(df)
+NameError: name 'df' is not defined
+[2023-09-14T03:15:33.033+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:15:33.043+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_extraction_dag.py took 0.170 seconds
+[2023-09-14T03:15:54.211+0000] {processor.py:157} INFO - Started process (PID=50) to work on /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:15:54.212+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/data_extraction_dag.py for tasks to queue
+[2023-09-14T03:15:54.214+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:15:54.214+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:15:54.363+0000] {logging_mixin.py:151} INFO - [2023-09-14T03:15:54.362+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/data_extraction_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_extraction_dag.py", line 98, in <module>
+    python_callable=_update_postgres_table(df)
+NameError: name 'df' is not defined
+[2023-09-14T03:15:54.364+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_dag.py
+[2023-09-14T03:15:54.374+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_extraction_dag.py took 0.167 seconds

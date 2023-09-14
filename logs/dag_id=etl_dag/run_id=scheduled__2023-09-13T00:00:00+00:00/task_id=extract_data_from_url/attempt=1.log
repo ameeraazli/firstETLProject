@@ -11,3 +11,84 @@
 [2023-09-14T07:58:51.203+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=extract_data_from_url, execution_date=20230913T000000, start_date=20230914T075849, end_date=20230914T075851
 [2023-09-14T07:58:51.223+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
 [2023-09-14T07:58:51.232+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-09-14T09:24:31.780+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_dag.extract_data_from_url scheduled__2023-09-13T00:00:00+00:00 [queued]>
+[2023-09-14T09:24:31.783+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_dag.extract_data_from_url scheduled__2023-09-13T00:00:00+00:00 [queued]>
+[2023-09-14T09:24:31.783+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2023-09-14T09:24:31.788+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): extract_data_from_url> on 2023-09-13 00:00:00+00:00
+[2023-09-14T09:24:31.790+0000] {standard_task_runner.py:57} INFO - Started process 229 to run task
+[2023-09-14T09:24:31.793+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'extract_data_from_url', 'scheduled__2023-09-13T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpi5qgbims']
+[2023-09-14T09:24:31.794+0000] {standard_task_runner.py:85} INFO - Job 3: Subtask extract_data_from_url
+[2023-09-14T09:24:31.823+0000] {task_command.py:415} INFO - Running <TaskInstance: etl_dag.extract_data_from_url scheduled__2023-09-13T00:00:00+00:00 [running]> on host c734f2da7931
+[2023-09-14T09:24:31.944+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='admin' AIRFLOW_CTX_DAG_ID='etl_dag' AIRFLOW_CTX_TASK_ID='extract_data_from_url' AIRFLOW_CTX_EXECUTION_DATE='2023-09-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-13T00:00:00+00:00'
+[2023-09-14T09:24:33.739+0000] {logging_mixin.py:151} INFO -           Code               Borough        Year       Value
+0    E09000002  Barking and Dagenham  1999-12-31  120.453818
+1    E09000002  Barking and Dagenham  2000-12-31  123.574527
+2    E09000002  Barking and Dagenham  2001-12-31  123.981310
+3    E09000002  Barking and Dagenham  2002-12-31  122.591776
+4    E09000002  Barking and Dagenham  2003-12-31  133.229048
+..         ...                   ...         ...         ...
+661        727     England and Wales  2012-12-31   65.962231
+662        727     England and Wales  2013-12-31         NaN
+663        727     England and Wales  2014-12-31         NaN
+664        727     England and Wales  2015-12-31         NaN
+665        727     England and Wales  2016-12-31         NaN
+
+[666 rows x 4 columns]
+[2023-09-14T09:24:33.823+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-09-14T09:24:33.830+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=extract_data_from_url, execution_date=20230913T000000, start_date=20230914T092431, end_date=20230914T092433
+[2023-09-14T09:24:33.871+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-09-14T09:24:33.887+0000] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-09-14T09:28:19.249+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_dag.extract_data_from_url scheduled__2023-09-13T00:00:00+00:00 [queued]>
+[2023-09-14T09:28:19.253+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_dag.extract_data_from_url scheduled__2023-09-13T00:00:00+00:00 [queued]>
+[2023-09-14T09:28:19.253+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2023-09-14T09:28:19.258+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): extract_data_from_url> on 2023-09-13 00:00:00+00:00
+[2023-09-14T09:28:19.261+0000] {standard_task_runner.py:57} INFO - Started process 57 to run task
+[2023-09-14T09:28:19.263+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'extract_data_from_url', 'scheduled__2023-09-13T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpjbxcxm38']
+[2023-09-14T09:28:19.265+0000] {standard_task_runner.py:85} INFO - Job 3: Subtask extract_data_from_url
+[2023-09-14T09:28:19.293+0000] {task_command.py:415} INFO - Running <TaskInstance: etl_dag.extract_data_from_url scheduled__2023-09-13T00:00:00+00:00 [running]> on host 7a3bfad172a7
+[2023-09-14T09:28:19.415+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='admin' AIRFLOW_CTX_DAG_ID='etl_dag' AIRFLOW_CTX_TASK_ID='extract_data_from_url' AIRFLOW_CTX_EXECUTION_DATE='2023-09-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-13T00:00:00+00:00'
+[2023-09-14T09:28:20.738+0000] {logging_mixin.py:151} INFO -           Code               Borough        Year       Value
+0    E09000002  Barking and Dagenham  1999-12-31  120.453818
+1    E09000002  Barking and Dagenham  2000-12-31  123.574527
+2    E09000002  Barking and Dagenham  2001-12-31  123.981310
+3    E09000002  Barking and Dagenham  2002-12-31  122.591776
+4    E09000002  Barking and Dagenham  2003-12-31  133.229048
+..         ...                   ...         ...         ...
+661        727     England and Wales  2012-12-31   65.962231
+662        727     England and Wales  2013-12-31         NaN
+663        727     England and Wales  2014-12-31         NaN
+664        727     England and Wales  2015-12-31         NaN
+665        727     England and Wales  2016-12-31         NaN
+
+[666 rows x 4 columns]
+[2023-09-14T09:28:20.778+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-09-14T09:28:20.783+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=extract_data_from_url, execution_date=20230913T000000, start_date=20230914T092819, end_date=20230914T092820
+[2023-09-14T09:28:20.826+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-09-14T09:28:20.840+0000] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-09-14T09:34:56.205+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_dag.extract_data_from_url scheduled__2023-09-13T00:00:00+00:00 [queued]>
+[2023-09-14T09:34:56.208+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_dag.extract_data_from_url scheduled__2023-09-13T00:00:00+00:00 [queued]>
+[2023-09-14T09:34:56.209+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2023-09-14T09:34:56.213+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): extract_data_from_url> on 2023-09-13 00:00:00+00:00
+[2023-09-14T09:34:56.216+0000] {standard_task_runner.py:57} INFO - Started process 74 to run task
+[2023-09-14T09:34:56.218+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'extract_data_from_url', 'scheduled__2023-09-13T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpx1_kzg7_']
+[2023-09-14T09:34:56.219+0000] {standard_task_runner.py:85} INFO - Job 3: Subtask extract_data_from_url
+[2023-09-14T09:34:56.246+0000] {task_command.py:415} INFO - Running <TaskInstance: etl_dag.extract_data_from_url scheduled__2023-09-13T00:00:00+00:00 [running]> on host 79bfd5ddbbec
+[2023-09-14T09:34:56.361+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='admin' AIRFLOW_CTX_DAG_ID='etl_dag' AIRFLOW_CTX_TASK_ID='extract_data_from_url' AIRFLOW_CTX_EXECUTION_DATE='2023-09-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-13T00:00:00+00:00'
+[2023-09-14T09:34:58.187+0000] {logging_mixin.py:151} INFO -           Code               Borough        Year       Value
+0    E09000002  Barking and Dagenham  1999-12-31  120.453818
+1    E09000002  Barking and Dagenham  2000-12-31  123.574527
+2    E09000002  Barking and Dagenham  2001-12-31  123.981310
+3    E09000002  Barking and Dagenham  2002-12-31  122.591776
+4    E09000002  Barking and Dagenham  2003-12-31  133.229048
+..         ...                   ...         ...         ...
+661        727     England and Wales  2012-12-31   65.962231
+662        727     England and Wales  2013-12-31         NaN
+663        727     England and Wales  2014-12-31         NaN
+664        727     England and Wales  2015-12-31         NaN
+665        727     England and Wales  2016-12-31         NaN
+
+[666 rows x 4 columns]
+[2023-09-14T09:34:58.237+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-09-14T09:34:58.244+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=extract_data_from_url, execution_date=20230913T000000, start_date=20230914T093456, end_date=20230914T093458
+[2023-09-14T09:34:58.291+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-09-14T09:34:58.306+0000] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check

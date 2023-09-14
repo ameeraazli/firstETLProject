@@ -9,6 +9,3 @@ COPY poetry.lock /app
 # Install any dependencies
 RUN pip3 install poetry
 RUN poetry install
-
-# Define the command to run when the container starts
-CMD ["poetry", "run", "python", "csv_to_postgres.py"]

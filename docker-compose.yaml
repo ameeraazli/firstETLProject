@@ -86,11 +86,11 @@ x-airflow-common:
       condition: service_healthy
 
 services:
-  web:
-    build:
-      context: .
-    depends_on:
-      - db
+  # web:
+  #   build:
+  #     context: .
+  #   depends_on:
+  #     - db
 
   db:
     image: postgres:13
@@ -102,7 +102,7 @@ services:
       - "5432:5432"
     volumes:
       - "./init.sql:/docker-entrypoint-initdb.d/init.sql"
-      
+
   postgres:
     image: postgres:13
     environment:

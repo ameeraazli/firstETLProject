@@ -40,7 +40,7 @@ def _update_postgres_table(**kwargs):
   df = json.loads(extract_df)
 
   for index, row in df.iterrows():
-    query = f"UPSERT INTO crime_date (code, borough, crimeyear, value) VALUES ('{row['Code']}', '{row['Borough']}', '{row['Year']}', '{row['Value']}')"
+    query = f"INSERT INTO crime_date (code, borough, crimeyear, value) VALUES ('{row['Code']}', '{row['Borough']}', '{row['Year']}', '{row['Value']}')"
     cursor.execute(query)
 
   connection.commit()

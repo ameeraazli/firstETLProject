@@ -1,0 +1,28 @@
+[2023-09-15T08:19:24.924+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_dag.update_pg manual__2023-09-15T08:19:24.231644+00:00 [queued]>
+[2023-09-15T08:19:24.928+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_dag.update_pg manual__2023-09-15T08:19:24.231644+00:00 [queued]>
+[2023-09-15T08:19:24.928+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2023-09-15T08:19:24.932+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): update_pg> on 2023-09-15 08:19:24.231644+00:00
+[2023-09-15T08:19:24.935+0000] {standard_task_runner.py:57} INFO - Started process 77 to run task
+[2023-09-15T08:19:24.937+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'update_pg', 'manual__2023-09-15T08:19:24.231644+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmp015p_mrx']
+[2023-09-15T08:19:24.938+0000] {standard_task_runner.py:85} INFO - Job 7: Subtask update_pg
+[2023-09-15T08:19:24.963+0000] {task_command.py:415} INFO - Running <TaskInstance: etl_dag.update_pg manual__2023-09-15T08:19:24.231644+00:00 [running]> on host f6f077378f09
+[2023-09-15T08:19:25.089+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='admin' AIRFLOW_CTX_DAG_ID='etl_dag' AIRFLOW_CTX_TASK_ID='update_pg' AIRFLOW_CTX_EXECUTION_DATE='2023-09-15T08:19:24.231644+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-09-15T08:19:24.231644+00:00'
+[2023-09-15T08:19:26.630+0000] {logging_mixin.py:151} INFO -           Code               Borough        Year       Value
+0    E09000002  Barking and Dagenham  1999-12-31  120.453818
+1    E09000002  Barking and Dagenham  2000-12-31  123.574527
+2    E09000002  Barking and Dagenham  2001-12-31  123.981310
+3    E09000002  Barking and Dagenham  2002-12-31  122.591776
+4    E09000002  Barking and Dagenham  2003-12-31  133.229048
+..         ...                   ...         ...         ...
+661        727     England and Wales  2012-12-31   65.962231
+662        727     England and Wales  2013-12-31         NaN
+663        727     England and Wales  2014-12-31         NaN
+664        727     England and Wales  2015-12-31         NaN
+665        727     England and Wales  2016-12-31         NaN
+
+[666 rows x 4 columns]
+[2023-09-15T08:19:26.723+0000] {logging_mixin.py:151} INFO - successful insertion into database
+[2023-09-15T08:19:26.723+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-09-15T08:19:26.729+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=update_pg, execution_date=20230915T081924, start_date=20230915T081924, end_date=20230915T081926
+[2023-09-15T08:19:26.769+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-09-15T08:19:26.780+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -7,6 +7,16 @@ DB_NAME = "postgres"
 DB_USER = "postgres"
 DB_PASSWORD = "helloworld123"
 
+def create_connection():
+  connection = psycopg2.connect(
+    host=DB_HOST,
+    database=DB_NAME,
+    user=DB_USER,
+    password=DB_PASSWORD,
+    port=5432
+  )
+  return connection
+
 def extract_data_from_url(url):
   response = requests.get(url)
   response.raise_for_status()
@@ -16,6 +26,7 @@ def extract_data_from_url(url):
   return df
 
 def update_postgres_table(df):
+  print(df)
   connection = create_connection()
   cursor = connection.cursor()
 
@@ -29,7 +40,12 @@ def update_postgres_table(df):
   print("successful insertion into database")
   connection.close()
 
-def run_aggregate_queries(df):
+def update_pg():
+  csv_url = "https://raw.githubusercontent.com/datasets/london-crime/master/data/crime-rates.csv"
+  data = extract_data_from_url(csv_url)
+  update_postgres_table(data) 
+
+def run_aggregate_queries():
   connection = create_connection()
   cursor = connection.cursor()
   cursor.execute("SELECT MIN(value) FROM crime_date WHERE value <> 'NaN'")
@@ -53,24 +69,7 @@ def run_aggregate_queries(df):
   print("successful aggregate operations")
   connection.close()
 
-def create_connection():
-  connection = psycopg2.connect(
-    host=DB_HOST,
-    database=DB_NAME,
-    user=DB_USER,
-    password=DB_PASSWORD,
-    port=5432
-  )
-
-  return connection
-
-
 if __name__ == "__main__":
-  csv_url = "https://raw.githubusercontent.com/datasets/london-crime/master/data/crime-rates.csv"
-  csv_data = extract_data_from_url(csv_url)
-  print(csv_data)
-
-  update_postgres_table(csv_data)
-
-  run_aggregate_queries(csv_data)
+  update_pg()
+  run_aggregate_queries()
 

@@ -1,0 +1,18 @@
+[2023-09-15T08:18:52.844+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_dag.run_aggregate_queries manual__2023-09-15T08:18:49.526138+00:00 [queued]>
+[2023-09-15T08:18:52.848+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_dag.run_aggregate_queries manual__2023-09-15T08:18:49.526138+00:00 [queued]>
+[2023-09-15T08:18:52.848+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2023-09-15T08:18:52.852+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): run_aggregate_queries> on 2023-09-15 08:18:49.526138+00:00
+[2023-09-15T08:18:52.856+0000] {standard_task_runner.py:57} INFO - Started process 66 to run task
+[2023-09-15T08:18:52.858+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'run_aggregate_queries', 'manual__2023-09-15T08:18:49.526138+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpdyq3n_w5']
+[2023-09-15T08:18:52.859+0000] {standard_task_runner.py:85} INFO - Job 6: Subtask run_aggregate_queries
+[2023-09-15T08:18:52.884+0000] {task_command.py:415} INFO - Running <TaskInstance: etl_dag.run_aggregate_queries manual__2023-09-15T08:18:49.526138+00:00 [running]> on host f6f077378f09
+[2023-09-15T08:18:53.002+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='admin' AIRFLOW_CTX_DAG_ID='etl_dag' AIRFLOW_CTX_TASK_ID='run_aggregate_queries' AIRFLOW_CTX_EXECUTION_DATE='2023-09-15T08:18:49.526138+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-09-15T08:18:49.526138+00:00'
+[2023-09-15T08:18:53.006+0000] {logging_mixin.py:151} INFO - The minimum crime rate in all of UK's borough:45.010384
+[2023-09-15T08:18:53.006+0000] {logging_mixin.py:151} INFO - The maximum crime rate in all of UK's borough:463.00064
+[2023-09-15T08:18:53.007+0000] {logging_mixin.py:151} INFO - The average crime rate in all of UK's borough:114.66545969684857
+[2023-09-15T08:18:53.007+0000] {logging_mixin.py:151} INFO - The median crime rate in UK's borough:103.135498046875
+[2023-09-15T08:18:53.008+0000] {logging_mixin.py:151} INFO - successful aggregate operations
+[2023-09-15T08:18:53.008+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-09-15T08:18:53.013+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=run_aggregate_queries, execution_date=20230915T081849, start_date=20230915T081852, end_date=20230915T081853
+[2023-09-15T08:18:53.032+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-09-15T08:18:53.040+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

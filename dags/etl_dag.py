@@ -11,7 +11,7 @@ def run_aggregate_queries_wrapper():
 
 with DAG(
   dag_id="etl_dag",
-  schedule ="@daily",
+  schedule ="@hourly",
   default_args={
     "owner": "admin",
     "retries": 1,
